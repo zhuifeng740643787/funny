@@ -9,6 +9,11 @@
 
 define('LARAVEL_START', microtime(true));
 
+
+define('ROOT_PATH', dirname(dirname(__DIR__)));// 项目根目录
+define('APP_PATH', ROOT_PATH . DIRECTORY_SEPARATOR . 'app');//项目app目录
+define('STORAGE_PATH', ROOT_PATH . DIRECTORY_SEPARATOR . 'storage');//项目storage目录
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -21,7 +26,7 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +40,7 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+$app = require_once __DIR__ . '/../bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------

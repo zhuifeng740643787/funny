@@ -3,6 +3,10 @@
 
 define('LARAVEL_START', microtime(true));
 
+define('ROOT_PATH', __DIR__);// 项目根目录
+define('APP_PATH', ROOT_PATH . DIRECTORY_SEPARATOR . 'app');//项目app目录
+define('STORAGE_PATH', ROOT_PATH . DIRECTORY_SEPARATOR . 'storage');//项目storage目录
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader

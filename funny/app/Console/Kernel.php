@@ -2,6 +2,10 @@
 
 namespace App\Console;
 
+use App\Console\Crawler\Joke\Bsbdj;
+use App\Console\Crawler\Joke\Duanziwang;
+use App\Console\Crawler\Joke\Neihanduanzi;
+use App\Console\Crawler\Joke\Toutiao;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -14,6 +18,10 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
+        Toutiao::class,
+        Neihanduanzi::class,
+        Bsbdj::class,
+        Duanziwang::class,
     ];
 
     /**
